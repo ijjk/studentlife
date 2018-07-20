@@ -1,0 +1,61 @@
+{
+  "port": 3030,
+  "host": "localhost",
+  "public": "../public/",
+  "defaultAvatar": "user.svg",
+  "defaultNewsThumb": "news.png",
+  "serverUrl": "http://localhost:3030/",
+  "uploadsUrl": "http://localhost:3030/uploads/",
+  "homePageId": "5ac287acd97dcd5cbd6de69c",
+  "newsPageId": "5ac28788d97dcd5cbd6de69b",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "upload": {
+    "path": "../uploads/",
+    "maxCmntText": 512,
+    "maxPostText": 1024,
+    "maxContactMsg": 1024,
+    "maxFileSize": 10240000,
+    "allowedExts": {
+      "images": [
+        "jpg",
+        "jpeg",
+        "png",
+        "gif"
+      ],
+      "other": [
+        "pdf",
+        "docx",
+        "doc",
+        "ppt",
+        "pptx",
+        "xls",
+        "xlsx"
+      ]
+    }
+  },
+  "authentication": {
+    "secret": "",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/auth",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "algorithm": "HS256",
+      "expiresIn": "4d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "mongodb": "mongodb://localhost:27017/studentlife"
+}
