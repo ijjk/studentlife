@@ -2,6 +2,18 @@
 
 > realtime school based social network
 
+## Demo
+
+You can try the demo at: https://sl.jjsweb.site
+
+\- Admin login  
+email: admin  
+password: pass
+
+\- Normal user login  
+email: john  
+password: pass
+
 ## About
 
 This project uses [Feathers](https://feathersjs.com) and [Next.js](https://github.com/zeit/next.js).   
