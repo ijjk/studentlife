@@ -7286,12 +7286,14 @@ var PostFile_PostFile = function PostFile(_ref) {
       }
     }))), external__react__default.a.createElement(ExtLink["a" /* default */], {
       href: config["uploadsUrl"] + file,
-      download: true
+      download: true,
+      className: "btn"
     }, external__react__default.a.createElement(react_fontawesome__default.a, {
       icon: "download",
       style: btnIconStyle
     }), external__react__default.a.createElement("span", null, "Download")), external__react__default.a.createElement(ExtLink["a" /* default */], {
-      href: viewerUrl + config["uploadsUrl"] + file
+      href: viewerUrl + config["uploadsUrl"] + file,
+      className: "btn"
     }, external__react__default.a.createElement(react_fontawesome__default.a, {
       icon: "eye",
       style: btnIconStyle

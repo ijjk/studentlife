@@ -76,12 +76,12 @@ const PostFile = ({ _id, file }) => (
               style={{ height: 72, width: 72, color: '#555555' }}
             />
           </div>
-          <ExtLink href={uploadsUrl + file} download>
+          <ExtLink href={uploadsUrl + file} download className='btn'>
             <Icon icon="download" style={btnIconStyle} />
             <span>Download</span>
           </ExtLink>
 
-          <ExtLink href={viewerUrl + uploadsUrl + file}>
+          <ExtLink href={viewerUrl + uploadsUrl + file} className='btn'>
             <Icon icon="eye" style={btnIconStyle} />
             <span>View</span>
           </ExtLink>
